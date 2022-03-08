@@ -1,0 +1,116 @@
+.cb{
+  display: grid;
+  grid-template-columns: repeat(8,90px);
+  grid-template-rows: repeat(8,90px);
+  width: 720px;
+  border: 2px solid white ;
+  height: 720px;
+  background-color: #779556;
+}
+.App{
+  display: grid;
+  place-content: center;
+  
+}
+.tile{
+  width: 90px;
+  height: 90px;
+  display: grid;
+  place-content: center;
+}
+
+.tile_white{
+  background-color: #ebecb0;
+}
+.tile_black{
+  background-color: #1487aa;
+}
+
+.tile_white{
+  background-color: #ebecb0;
+}
+
+
+body{
+  background-color: black;
+}
+
+.tile .coin{
+  height:90px;
+  width: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.coin:hover{
+  cursor: grab;
+}
+.coin:active{
+  cursor: grabbing;
+}
+#pawn-promotion-modal{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+#pawn-promotion-modal > .modal-body{
+  position: absolute;
+  height: 300px;
+  width: 720px;
+  top: calc(50% - 150px);
+  left: calc(50% - 360px);
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  border-radius: 10px;
+  background-color: rgba(0,0,255,0.3);
+}
+#pawn-promotion-modal > .modal-body > img{
+  height: 150px;
+  padding: 15px;
+  border-radius: 50%;
+}
+#pawn-promotion-modal > .modal-body > img:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.Startup {
+  align-items: center;
+  background-image: url("chess.jpeg");
+  height: 720px;
+  width: 1500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Startup > .link> .btn {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+  margin-top: 150px;
+  margin-left: 630px;
+  height: 50px;
+  width: 200px;
+  color:black;
+  border-radius: 50px;
+  border: none;
+  background-color:rgba(243, 247, 30, 0.8);
+}
+.Startup > .link > .btn:hover{
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+.Startup > .link{
+  text-decoration: none;
+}
+
+.Startup > .Heading{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+  margin-top: 50px;
+  margin-left: 340px;
+  color: rgba(255,255,255,1);
+}
